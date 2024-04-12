@@ -12,25 +12,28 @@
 ![IMAGE ALT TEXT HERE](./img/00_esp32_mpu6050.JPG)
 
 
-### Build and program it
+### Build and flash esp32
 ```
+cd ble_mpu6050
 idf.py set-target esp32
 idf.py build
 idf.py -p /dev/ttyUSB0 flash monitor
 ```
 
+***
 
 ### Enable BLE on chrome
 ![IMAGE ALT TEXT HERE](./img/01_enable_chrome_flags.png)
 
 
 ### Execute html to connect esp32 BLE
-`chrome/chrome_esp32_ble_accel.html`
+`ble_mpu6050/chrome/chrome_esp32_ble_accel.html`
 
 
 ### Demo on chrome
 [![IMAGE ALT TEXT HERE](./img/02_use_ble_on_chrome.png)](https://drive.google.com/file/d/14BpTHdKoWap-UEXso_6OFyd7D1gNAIAs/view?usp=sharing)
 
+***
 
 ### Reference 
 1. [esp-idf-mpu6050-dmp](https://github.com/nopnop2002/esp-idf-mpu6050-dmp)
