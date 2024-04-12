@@ -35,8 +35,6 @@
 
 #include "driver/i2c.h"
 
-#include "parameter.h"
-
 #define BLINK_GPIO 2 // pico-d4
 
 static uint8_t s_led_state = 0;
@@ -329,8 +327,9 @@ void start_i2c(void) {
 	conf.scl_pullup_en = GPIO_PULLUP_ENABLE;
 	conf.master.clk_speed = 400000;
 	conf.clk_flags = 0;
-	ESP_ERROR_CHECK(i2c_param_config(I2C_NUM_0, &conf));
-	ESP_ERROR_CHECK(i2c_driver_install(I2C_NUM_0, I2C_MODE_MASTER, 0, 0, 0));
+	ESP_ERROR_CHECK(i2c_param_config((i2c_port_t)CONFIG_I2C_NUM, &conf));
+	ESP_ERROR_CHECK(i2c_driver_install((i2c_port_t)CONFIG_I2C_NUM, I2C_MODE_MASTER, 0, 0, 0));
+	// i2c_set_timeout
 }
 
 void app_main(void)

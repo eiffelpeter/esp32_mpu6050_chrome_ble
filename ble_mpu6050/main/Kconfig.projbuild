@@ -27,4 +27,8 @@ menu "Application Configuration"
 		help
 			GPIO number (IOxx) of SDA.
 
+	config I2C_NUM
+		int "i2c bus number"
+		default 0 if IDF_TARGET_ESP32
+
 endmenu

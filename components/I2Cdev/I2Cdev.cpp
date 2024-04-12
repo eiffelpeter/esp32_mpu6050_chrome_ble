@@ -39,7 +39,7 @@ THE SOFTWARE.
 
 #include "I2Cdev.h"
 
-#define I2C_NUM I2C_NUM_0
+#define I2C_NUM (i2c_port_t)CONFIG_I2C_NUM
 
 #undef ESP_ERROR_CHECK
 #define ESP_ERROR_CHECK(x)   do { esp_err_t rc = (x); if (rc != ESP_OK) { ESP_LOGE("err", "esp_err_t = %d", rc); /*assert(0 && #x);*/} } while(0);

@@ -51,8 +51,6 @@ THE SOFTWARE.
 #include "driver/i2c.h"
 #include "cJSON.h"
 
-#include "parameter.h"
-
 #if 0 // peter 
 extern QueueHandle_t xQueueTrans;
 extern MessageBufferHandle_t xMessageBufferToClient;
