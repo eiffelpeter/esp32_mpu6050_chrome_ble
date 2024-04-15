@@ -40,3 +40,5 @@ idf.py -p /dev/ttyUSB0 flash monitor
 2. [HTML5-BLE-eAR](https://github.com/bennyplo/HTML5-BLE-eAR/tree/master?tab=readme-ov-file)
 3. [node-imu-cube](https://github.com/gregfedirko/node-imu-cube)
 4. [micro:bit and pc](https://zenn.dev/saba/articles/6a177c00fd0550a2f78f)
+5. [STM32F030_MAX30102](https://github.com/ScarsFun/STM32F030_MAX30102)
+6. [MAX30102_by_RF](https://github.com/aromring/MAX30102_by_RF)
